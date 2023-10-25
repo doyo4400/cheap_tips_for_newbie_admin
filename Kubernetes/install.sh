@@ -8,6 +8,8 @@ For run command in k8 clusters, kubectl : https://kubernetes.io/docs/reference/k
 Install k8s : https://kubernetes.io/releases/download/
 For 1.27 version.
 
+
+##### install from curl ######
 curl -Ls "https://sbom.k8s.io/$(curl -Ls https://dl.k8s.io/release/stable.txt)/release"| grep "SPDXID: SPDXRef-Package-registry.k8s.io"|  grep -v sha256 | cut -d- -f3- | sed 's/-/\//'| sed 's/-v1/:v1/'
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"   
 
@@ -22,7 +24,7 @@ Check version :
 kubectl version --client
 
 
-Install des rep for debian 
+ ##### install from package manager ####
 sudo apt-get update
 sudo apt-get install -y ca-certificates curl
 sudo apt-get install -y apt-transport-https
