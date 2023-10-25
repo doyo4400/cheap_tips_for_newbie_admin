@@ -1,0 +1,11 @@
+#!/bin/bash
+
+git clone "https://github.com/ThePorgs/Exegol"
+python3 -m pip install --user --requirement "Exegol/requirements.txt"
+sudo ln -s "$(pwd)/exegol.py" "/usr/local/bin/exegol"
+
+echo '"eval "$(register-python-argcomplete --no-defaults exegol)"'
+
+exegol install $choice
+
+# for update : exegol update
