@@ -9,4 +9,5 @@ https://gpsearch.azurewebsites.net/
 
 # to do
 - [] agregate all tips in this repo
+- 
 [-] create folder for all category
