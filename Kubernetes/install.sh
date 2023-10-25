@@ -54,7 +54,7 @@ image : Kubernetes kind architecture objective.png
 
 
 Install of docker (https://github.com/doyo4400/cheap_tips_for_newbie_admin/blob/main/Docker-containers/install_docker_and_portainer.sh)
-sudo apt install gccgo-go
+sudo apt install gccgo-go -y
 go install sigs.k8s.io/kind@v0.20.0 && kind create cluster
 sudo cp -s /home/$USER/go/bin/kind /usr/bin/kind 
 
